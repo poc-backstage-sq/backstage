@@ -273,6 +273,14 @@ const componentPage = (
   </EntitySwitch>
 );
 
+// import {
+//   EntityAboutCard,
+//   EntityApiDefinitionCard,
+//   EntityConsumingComponentsCard,
+//   EntityProvidingComponentsCard,
+// } from '@backstage/plugin-api-docs';
+
+
 const apiPage = (
   <EntityLayout>
     <EntityLayout.Route path="/" title="Overview">
