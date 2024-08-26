@@ -56,4 +56,9 @@ backend.add(import('@backstage/plugin-kubernetes-backend/alpha'));
 backend.add(import('@backstage/plugin-scaffolder-backend-module-github'));
 backend.add(import('@backstage-community/plugin-sonarqube-backend'));
 
+// import techInsights from './plugins/techInsights';
+// const techInsightsEnv = useHotMemoize(module, () => createEnv('tech_insights'));
+
+// apiRouter.use('/tech-insights', await techInsights(techInsightsEnv));
+
 backend.start();

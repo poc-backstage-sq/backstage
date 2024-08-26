@@ -44,6 +44,14 @@ integrations:
     #   token: ${GHE_TOKEN}
 
 proxy:
+
+#   '/sonarqube':
+#     target: https://your.sonarqube.instance.com/api
+#     allowedMethods: ['GET']
+#     auth: "${SONARQUBE_TOKEN}:"
+
+# sonarQube:
+#   baseUrl: https://your.sonarqube.instance.com
   # '/jira/api':
   #   target: '<JIRA_URL>'
   #   headers:

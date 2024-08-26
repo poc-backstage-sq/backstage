@@ -1,3 +1,8 @@
+import { EntityGithubPullRequestsContent } from '@roadiehq/backstage-plugin-github-pull-requests';
+import { EntityGithubPullRequestsOverviewCard } from '@roadiehq/backstage-plugin-github-pull-requests';
+
+import { SonarQubeCard } from '@backstage/plugin-sonarqube';
+
 import { EntitySonarQubeCard } from '@backstage-community/plugin-sonarqube';
 import { EntityGithubActionsContent } from '@backstage/plugin-github-actions';
 import { EntityRecentGithubActionsRunsCard } from '@backstage/plugin-github-actions';
@@ -145,6 +150,14 @@ const overviewContent = (
     <Grid item md={6}>
       <EntitySonarQubeCard variant="gridItem" />
     </Grid>
+    <Grid item md={6}>
+      <EntitySonarQubeCard variant="gridItem" />
+    </Grid>
+     
+      <Grid item md={6}>
+        <EntityGithubPullRequestsOverviewCard />
+      </Grid>
+     
 
     <Grid item md={4} xs={12}>
       <EntityLinksCard />
@@ -163,6 +176,10 @@ const serviceEntityPage = (
 
     <EntityLayout.Route path="/ci-cd" title="CI/CD">
       {cicdContent}
+    </EntityLayout.Route>
+
+    <EntityLayout.Route path="/pull-requests" title="Pull Requests">
+      <EntityGithubPullRequestsContent />
     </EntityLayout.Route>
 
     <EntityLayout.Route path="/ci-cd" title="CI/CD">
