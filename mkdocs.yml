@@ -1,0 +1,28 @@
+site_name: Odin - Pai de todos
+docs_dir: docs
+# plugins:
+#   - techdocs-core
+
+theme:
+  name: material
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format  
+#sidebar navigation
+nav:
+  - Visão Geral:
+    - O que é Backstage?: 'index.md'
+  - Conceitos do Backstage:
+    - Arquitetura: 'architecture.md'
+    - Componentes: 'components.md'
+  - Instalação e Configuração:
+    - Primeiros Passos: 'getting-started.md'
+    - Configuração do Aplicativo:
+      - Configurando o Aplicativo com plugins: 'configure-app-with-plugins.md'
+  - Desenvolvimento Local:
+    - CLI:
+      - Visão Geral: 'cli-overview.md'

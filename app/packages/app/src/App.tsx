@@ -1,3 +1,5 @@
+import { Mermaid } from 'backstage-plugin-techdocs-addon-mermaid';
+
 import React from 'react';
 import { Navigate, Route } from 'react-router-dom';
 import { apiDocsPlugin, ApiExplorerPage } from '@backstage/plugin-api-docs';
@@ -78,6 +80,7 @@ const routes = (
     >
       <TechDocsAddons>
         <ReportIssue />
+        <Mermaid config={{ theme: 'forest', themeVariables: { lineColor: '#000000' } }} />
       </TechDocsAddons>
     </Route>
     <Route path="/create" element={<ScaffolderPage />} />

@@ -44,6 +44,7 @@
     "@material-ui/icons": "^4.9.1",
     "@roadiehq/backstage-plugin-github-pull-requests": "^2.5.27",
     "@roadiehq/backstage-plugin-jira": "^2.5.8",
+    "backstage-plugin-techdocs-addon-mermaid": "^0.13.0",
     "history": "^5.0.0",
     "react": "^18.0.2",
     "react-dom": "^18.0.2",
